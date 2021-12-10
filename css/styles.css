@@ -1,116 +1,106 @@
+:root {
+  --brand-color: #2196f3;
+  --font-family: "Roboto";
+}
+
+body {
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: var(--brand-color);
+}
+
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--brand-color);
+  width: 145px;
+  height: 31px;
+  text-decoration: none;
 }
-.navstudio {
-  font-family: Roboto;
-  font-style: normal;
+.colortext {
+  color: #000;
+}
+
+.navigation {
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  list-style-type: none;
 
   color: #212121;
 }
-.navstudio:hover {
-  color: #2196f3;
+.navigation:hover,
+.navigation:focus {
+  color: var(--brand-color);
+}
+.list {
+  list-style: none;
 }
 
-.navportfolio {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #212121;
-}
-.navportfolio:hover {
-  color: #2196f3;
-}
-.navcontacts {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #212121;
-}
-.navcontacts:hover {
-  color: #2196f3;
-}
 .navstreet {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .navstreet:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 .adress {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
+  list-style-type: none;
   color: #757575;
 }
-.adress:hover {
-  color: #2196f3;
+.adress:hover,
+.adress:focus {
+  color: var(--brand-color);
 }
 .button {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-
+  list-style: none;
+  background: #f5f4fa;
   color: #212121;
+  border: none;
 }
-.button:hover {
-  background: #2196f3;
+.button:hover,
+.button:focus {
+  cursor: pointer;
   color: #ffffff;
+  background-color: var(--brand-color);
 }
-.container {
+.buttons {
+  list-style: none;
+}
+.link {
   background: #ffffff;
   border: 1px solid #eeeeee;
   width: 370px;
 }
+.links {
+  list-style: none;
+}
 .titles {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-
   color: #212121;
-}
-.titles:hover {
-  text-decoration: underline;
-  text-decoration-color: #2196f3;
 }
 
 .navnames {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -119,9 +109,14 @@
   color: #757575;
 }
 .navnames:hover {
-  text-decoration: underline;
-  text-decoration-color: #2196f3;
+  list-style: none;
 }
+
+.titles,
+.navnames {
+  text-decoration: none;
+}
+
 .footer {
   background: #2f303a;
 }
