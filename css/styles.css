@@ -1,10 +1,14 @@
 :root {
   --brand-color: #2196f3;
+  --footercolor: #2f303a;
   --font-family: "Roboto";
+  --whitecolor: #ffffff;
+  --adresscolor: #757575;
+  --colortext: #000;
+  --darkgrey: #212121;
 }
-
 body {
-  background: #ffffff;
+  background: var(--whitecolor);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -23,9 +27,8 @@ body {
   text-decoration: none;
 }
 .colortext {
-  color: #000;
+  color: var(--colortext);
 }
-
 .navigation {
   font-weight: 500;
   line-height: 16px;
@@ -33,7 +36,7 @@ body {
   text-decoration: none;
   list-style-type: none;
 
-  color: #212121;
+  color: var(--darkgrey);
 }
 .navigation:hover,
 .navigation:focus {
@@ -47,7 +50,7 @@ body {
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--whitecolor);
 }
 .navstreet:hover {
   color: var(--brand-color);
@@ -58,12 +61,13 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   list-style-type: none;
-  color: #757575;
+  color: var(--adresscolor);
 }
 .adress:hover,
 .adress:focus {
   color: var(--brand-color);
 }
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -71,33 +75,30 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   list-style: none;
-  background: #f5f4fa;
-  color: #212121;
+  background: var(--whitecolor);
+  color: var(--darkgrey);
   border: none;
 }
+
 .button:hover,
 .button:focus {
   cursor: pointer;
-  color: #ffffff;
+  color: var(--whitecolor);
   background-color: var(--brand-color);
 }
+
 .buttons {
   list-style: none;
 }
-.link {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  width: 370px;
+.footer {
+  background: var(--footercolor);
 }
-.links {
-  list-style: none;
-}
-.titles {
+.titlesportfolio {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  color: #212121;
+  color:var(--darkgrey)
 }
 
 .navnames {
@@ -106,7 +107,7 @@ body {
   line-height: 30px;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color:var(--adresscolor);
 }
 .navnames:hover {
   list-style: none;
@@ -116,7 +117,62 @@ body {
 .navnames {
   text-decoration: none;
 }
-
-.footer {
-  background: #2f303a;
+.section {
+  background-color:var(--footercolor);
 }
+.headtitle {
+  color: white;
+  weight: 900;
+  size: 44px;
+  line-height: 60px;
+  letter: 6%;
+  text-align: center:
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color:var(--darkgrey);
+}
+.text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color:var(--adresscolor);
+}
+.worktitle {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color:var(--darkgrey);
+}
+.worktitle:hover {
+    list-style: none;
+}
+
+.nametitle {
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: var(--darkgrey);
+}
+.position {
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color:var(--adresscolor);
+}
+ 
