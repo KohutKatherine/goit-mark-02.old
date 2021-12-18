@@ -14,9 +14,8 @@ body {
   font-style: normal;
   color: var(--brand-color);
 }
-
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -26,10 +25,22 @@ body {
   height: 31px;
   text-decoration: none;
 }
-.colortext {
+.logo-text {
   color: var(--colortext);
 }
-.navigation {
+.logo-white {
+  color: var(--whitecolor);
+}
+.team,
+.about,
+.links,
+.work {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.nav-link {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -38,37 +49,54 @@ body {
 
   color: var(--darkgrey);
 }
-.navigation:hover,
-.navigation:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--brand-color);
 }
 .list {
-  list-style: none;
+  list-style-type: none;
 }
-
-.navstreet {
+.list-street {
+  font-style: normal;
+  text-decoration: none;
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--whitecolor);
 }
-.navstreet:hover {
+.list-street:hover {
   color: var(--brand-color);
 }
-
-.adress {
+.list-adress {
+  font-style: normal;
+  text-decoration: none;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   list-style-type: none;
   color: var(--adresscolor);
+  text-decoration: none;
 }
-.adress:hover,
-.adress:focus {
+.list-adress:hover,
+.list-adress:focus {
   color: var(--brand-color);
 }
-
 .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  list-style: none;
+  background: var(--brand-color);
+  color: var(--whitecolor);
+  border: none;
+}
+.button:focus,
+.button:hover {
+  cursor: pointer;
+}
+.button-filter {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -79,75 +107,66 @@ body {
   color: var(--darkgrey);
   border: none;
 }
-
-.button:hover,
-.button:focus {
+.button-filter:hover,
+.button-filter:focus {
   cursor: pointer;
   color: var(--whitecolor);
   background-color: var(--brand-color);
 }
-
 .buttons {
   list-style: none;
 }
 .footer {
   background: var(--footercolor);
 }
-.titlesportfolio {
+.links-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  color:var(--darkgrey)
+  color: var(--darkgrey);
 }
-
-.navnames {
+.links-text {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
 
-  color:var(--adresscolor);
+  color: var(--adresscolor);
 }
 .navnames:hover {
   list-style: none;
 }
-
 .titles,
 .navnames {
   text-decoration: none;
 }
-.section {
-  background-color:var(--footercolor);
+.hero {
+  background-color: var(--footercolor);
 }
-.headtitle {
+.hero-title {
   color: white;
-  weight: 900;
-  size: 44px;
+  font-weight: 900;
+  font-size: 44px;
   line-height: 60px;
-  letter: 6%;
-  text-align: center:
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.title {
+.about-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color:var(--darkgrey);
+  color: var(--darkgrey);
 }
-.text {
+.about-text {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
-  color:var(--adresscolor);
+  color: var(--adresscolor);
 }
 .worktitle {
   font-weight: bold;
@@ -156,23 +175,21 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color:var(--darkgrey);
+  color: var(--darkgrey);
 }
 .worktitle:hover {
-    list-style: none;
+  list-style: none;
 }
-
-.nametitle {
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 0.03em;
-color: var(--darkgrey);
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--darkgrey);
 }
-.position {
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 0.03em;
-color:var(--adresscolor);
+.team-position {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--adresscolor);
 }
- 
