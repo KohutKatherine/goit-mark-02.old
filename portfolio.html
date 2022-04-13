@@ -10,34 +10,44 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link href="./css/styles.css" type="text/css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <a class="logo" href="#">Web<span class="logo-text">Studio</span></a>
-      <nav>
-        <ul class="list">
+      <div class="container flex">
+        <div>
+          <a class="logo" href="#">Web<span class="logo-text">Studio</span></a>
+          <nav class="inline-block header-nav">
+            <ul class="list list-inline header-navigation">
+              <li>
+                <a class="nav-link" href="index.html">Студия</a>
+              </li>
+              <li>
+                <a class="nav-link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="list list-inline header-navigation">
           <li>
-            <a class="nav-link" href="index.html">Студия</a>
+            <a class="list-adress" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a class="nav-link" href="portfolio.html">Портфолио</a></li>
-          <li><a class="nav-link" href="#">Контакты</a></li>
+          <li>
+            <a class="list-adress" href="tel:+380961111111">+380961111111</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="list-adress" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="list-adress" href="tel:+380961111111">+380961111111</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <ul class="buttons">
+      <div class="container">
+      <ul class="buttons list-inline filters">
         <li>
           <button class="button-filter" type="button">Все</button>
         </li>
@@ -54,7 +64,7 @@
           <button class="button-filter" type="button">Маркетинг</button>
         </li>
       </ul>
-      <ul class="links">
+      <ul class="portfolio-list flex">
         <li>
           <a href="#" class="link">
             <img
@@ -159,26 +169,32 @@
           </a>
         </li>
       </ul>
+      </div>
     </main>
-    <footer class="footer">
-      <a class="logo" href="#">Web<span class="logo-white">Studio</span></a>
-      <address>
-        <ul class="list">
-          <li>
-            <a class="list-street" href="https://goo.gl/maps/xvdYMsPoaaACo8cn6"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a class="list-adress" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="list-adress" href="tel:+380991111111">+380991111111</a>
-          </li>
-        </ul>
-      </address>
+   <footer class="footer">
+      <div class="container">
+        <a class="logo logo-footer" href="#">Web<span class="logo-white">Studio</span></a>
+        <address>
+          <ul class="list">
+            <li>
+              <a
+                class="list-street"
+                href="https://goo.gl/maps/xvdYMsPoaaACo8cn6"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a class="list-adress" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="list-adress" href="tel:+380991111111">+380991111111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
+  </div>
   </body>
 </html>
